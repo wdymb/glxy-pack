@@ -20,7 +20,7 @@ public class UserServiceImpl implements IUserService {
     private UserMapper userMapper;
 
     @Override
-    public List<User> getUSer() {
+    public List<User> getUser() {
         return userMapper.getUser();
     }
 
@@ -28,4 +28,12 @@ public class UserServiceImpl implements IUserService {
     public boolean delete(Integer id) {
         return userMapper.delete(id) > 0;
     }
+
+    @Override
+    public boolean addUser(User user) {
+        int num = userMapper.addUser(user);
+        return num>0;
+    }
+
+
 }

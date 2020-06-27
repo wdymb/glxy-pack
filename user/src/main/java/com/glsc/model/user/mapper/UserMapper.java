@@ -22,4 +22,6 @@ public interface UserMapper {
      * @return
      */
     int delete(@Param("id") Integer id);
+
+    int addUser(User user);
 }

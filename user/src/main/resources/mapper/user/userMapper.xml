@@ -5,6 +5,9 @@
     <delete id="delete">
         delete from t_test_user where id = #{id}
     </delete>
+    <insert id="addUser" >
+        insert into t_test_user (username, password) values (#{username},#{password})
+    </insert>
 
     <select id="getUser" resultType="com.glsc.model.user.bean.pojo.User">
         select * from t_test_user

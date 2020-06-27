@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface IUserService {
 
-    List<User> getUSer();
+    List<User> getUser();
 
     /**
      * 删除
@@ -15,4 +15,6 @@ public interface IUserService {
      * @return
      */
     boolean delete(Integer id);
+
+    boolean addUser(User user);
 }
