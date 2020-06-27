@@ -3,7 +3,9 @@ package com.glsc.model.user.controller;
 import com.glsc.model.user.bean.pojo.User;
 import com.glsc.model.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -22,5 +24,10 @@ public class UserController {
     @GetMapping("/users")
     public List<User> getUser(){
         return userService.getUSer();
+    }
+
+    @DeleteMapping("/user/{id}")
+    public boolean delete(@PathVariable("id") Integer id){
+        return userService.delete(id);
     }
 }

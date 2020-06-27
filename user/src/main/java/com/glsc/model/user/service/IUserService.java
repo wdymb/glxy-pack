@@ -8,4 +8,11 @@ import java.util.List;
 public interface IUserService {
 
     List<User> getUSer();
+
+    /**
+     * 删除
+     * @param id
+     * @return
+     */
+    boolean delete(Integer id);
 }

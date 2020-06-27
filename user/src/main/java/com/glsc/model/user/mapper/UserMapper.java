@@ -2,6 +2,7 @@ package com.glsc.model.user.mapper;
 
 import com.glsc.model.user.bean.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -14,4 +15,11 @@ import java.util.List;
 public interface UserMapper {
 
     List<User> getUser();
+
+    /**
+     * 删除
+     * @param id
+     * @return
+     */
+    int delete(@Param("id") Integer id);
 }
