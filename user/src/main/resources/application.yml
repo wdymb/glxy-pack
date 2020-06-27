@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    password: 123456
+    username: root
+    url: jdbc:mysql://120.78.93.227:3306/user
+
+mybatis:
+  mapper-locations: classpath:mapper/*/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
