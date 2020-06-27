@@ -4,6 +4,8 @@ import com.glsc.model.user.bean.pojo.User;
 import com.glsc.model.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -21,6 +23,11 @@ public class UserController {
 
     @GetMapping("/users")
     public List<User> getUser(){
-        return userService.getUSer();
+        return userService.getUser();
+    }
+
+    @PostMapping("/user")
+    public boolean addUser(@RequestBody User user){
+        return userService.addUser(user);
     }
 }

@@ -7,5 +7,7 @@ import java.util.List;
 
 public interface IUserService {
 
-    List<User> getUSer();
+    List<User> getUser();
+
+    boolean addUser(User user);
 }

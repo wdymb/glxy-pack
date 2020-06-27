@@ -6,6 +6,7 @@ import com.glsc.model.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -16,11 +17,19 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements IUserService {
 
-    @Autowired
+    @Resource
     private UserMapper userMapper;
 
     @Override
-    public List<User> getUSer() {
+    public List<User> getUser() {
         return userMapper.getUser();
     }
+
+    @Override
+    public boolean addUser(User user) {
+        int num = userMapper.addUser(user);
+        return num>0;
+    }
+
+
 }
