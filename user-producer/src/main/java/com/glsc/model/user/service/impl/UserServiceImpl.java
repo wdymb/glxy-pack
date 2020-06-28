@@ -1,10 +1,10 @@
-package glsc.model.user.service.impl;
+package com.glsc.model.user.service.impl;
 
-import glsc.model.user.bean.pojo.User;
-import glsc.model.user.mapper.UserMapper;
-import glsc.model.user.service.IUserService;
+import com.alibaba.dubbo.config.annotation.Service;
+import com.glsc.model.user.bean.pojo.User;
+import com.glsc.model.user.mapper.UserMapper;
+import com.glsc.model.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

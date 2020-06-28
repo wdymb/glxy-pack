@@ -1,6 +1,6 @@
-package glsc.model.user.mapper;
+package com.glsc.model.user.mapper;
 
-import glsc.model.user.bean.pojo.User;
+import com.glsc.model.user.bean.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

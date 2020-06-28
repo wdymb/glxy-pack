@@ -1,7 +1,7 @@
-package com.glsc.model.user.controller;
+package glsc.model.user.controller;
 
-import com.glsc.model.user.bean.pojo.User;
-import com.glsc.model.user.service.IUserService;
+import glsc.model.user.bean.pojo.User;
+import glsc.model.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.glsc;
+package glsc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,7 +1,7 @@
-package glsc.model.user.service;
+package com.glsc.model.user.service;
 
-import glsc.model.user.bean.pojo.User;
-import org.springframework.stereotype.Service;
+
+import com.glsc.model.user.bean.pojo.User;
 
 import java.util.List;
 

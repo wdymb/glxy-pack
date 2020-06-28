@@ -1,4 +1,4 @@
-package glsc.model.user.bean.pojo;
+package com.glsc.model.user.bean.pojo;
 
 import lombok.Data;
 

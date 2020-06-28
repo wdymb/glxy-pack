@@ -8,6 +8,7 @@
         <artifactId>parent</artifactId>
         <relativePath />
     </parent>
+    <packaging>jar</packaging>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>api</artifactId>
@@ -15,6 +16,11 @@
     <name>api</name>
 
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
 </project>

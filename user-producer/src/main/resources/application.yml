@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+
+  datasource:
+    password: 123456
+    username: root
+    url: jdbc:mysql://120.78.93.227:3306/test
+
+mybatis:
+  mapper-locations: classpath:mapper/*/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+dubbo:
+  application:
+    id: user-producer
+    name: user-producer
+  registries:
+    address: zookeeper://120.78.93.227:2181
+  protocol:
+    port: 33333
