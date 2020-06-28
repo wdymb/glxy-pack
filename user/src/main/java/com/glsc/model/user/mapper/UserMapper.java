@@ -24,4 +24,8 @@ public interface UserMapper {
     int delete(@Param("id") Integer id);
 
     int addUser(User user);
+
+    void updateUser(User user);
+
+    User getUserById(@Param("id") Integer id);
 }

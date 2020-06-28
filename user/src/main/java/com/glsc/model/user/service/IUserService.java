@@ -17,4 +17,6 @@ public interface IUserService {
     boolean delete(Integer id);
 
     boolean addUser(User user);
+
+    User updateUser(User user);
 }

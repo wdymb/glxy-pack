@@ -2,6 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.glsc.model.user.mapper.UserMapper">
+    <update id="updateUser">
+        update t_test_user set username=#{username},password=#{password} where id=#{id}
+    </update>
     <delete id="delete">
         delete from t_test_user where id = #{id}
     </delete>
@@ -11,5 +14,8 @@
 
     <select id="getUser" resultType="com.glsc.model.user.bean.pojo.User">
         select * from t_test_user
+    </select>
+    <select id="getUserById" resultType="com.glsc.model.user.bean.pojo.User">
+        select * from t_test_user where id=#{id}
     </select>
 </mapper>
