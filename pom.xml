@@ -8,7 +8,6 @@
     <modules>
         <module>api</module>
         <module>parent</module>
-        <module>utils</module>
         <module>common-utils</module>
         <module>service-utils</module>
         <module>web-utils</module>

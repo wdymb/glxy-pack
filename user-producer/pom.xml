@@ -13,6 +13,8 @@
       <relativePath />
   </parent>
 
+  <packaging>jar</packaging>
+
   <dependencies>
     <dependency>
       <groupId>com.glxy</groupId>
