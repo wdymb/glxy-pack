@@ -2,10 +2,13 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: user-producer
   datasource:
-    username: root
     password: 123456
+    username: root
     url: jdbc:mysql://120.78.93.227:3306/test
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis:
   mapper-locations: classpath:mapper/*/*Mapper.xml
@@ -14,11 +17,9 @@ mybatis:
 
 dubbo:
   application:
-    name: user-producer #应用名
+    name: user-producer  #应用名称
   registry:
-    address: zookeeper://120.78.93.227:2181 #zookeeper地址
-  #   port: 2181 #提供注册的端口
+    address: zookeeper://120.78.93.227:2181
   protocol:
     name: dubbo
-    port: 20889 #dubbo服务暴露的端口
-  scan: com.glsc.model.user.service.impl #扫描的包名
+    port: 33333

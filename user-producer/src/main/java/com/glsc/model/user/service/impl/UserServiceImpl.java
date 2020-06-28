@@ -1,9 +1,9 @@
 package com.glsc.model.user.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.glsc.model.user.bean.pojo.User;
 import com.glsc.model.user.mapper.UserMapper;
 import com.glsc.model.user.service.IUserService;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
