@@ -24,10 +24,11 @@
 
     <dependencyManagement>
         <dependencies>
+
             <dependency>
-                <groupId>com.alibaba.spring.boot</groupId>
+                <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>2.0.0</version>
+                <version>2.7.7</version>
             </dependency>
 
             <dependency>

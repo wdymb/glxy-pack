@@ -2,10 +2,9 @@ server:
   port: 8081
 
 spring:
-
   datasource:
-    password: 123456
     username: root
+    password: 123456
     url: jdbc:mysql://120.78.93.227:3306/test
 
 mybatis:
@@ -15,9 +14,11 @@ mybatis:
 
 dubbo:
   application:
-    id: user-producer
-    name: user-producer
-  registries:
-    address: zookeeper://120.78.93.227:2181
+    name: user-producer #应用名
+  registry:
+    address: zookeeper://120.78.93.227:2181 #zookeeper地址
+  #   port: 2181 #提供注册的端口
   protocol:
-    port: 33333
+    name: dubbo
+    port: 20889 #dubbo服务暴露的端口
+  scan: com.glsc.model.user.service.impl #扫描的包名
