@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableDubboConfig
-@DubboComponentScan("com.glsc.model.**.impl")
+//@DubboComponentScan("com.glsc.model.**.impl")
 public class UserProducerApplication {
 
     public static void main(String[] args) {
