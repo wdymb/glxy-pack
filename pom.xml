@@ -12,6 +12,7 @@
         <module>service-utils</module>
         <module>web-utils</module>
         <module>user-producer</module>
+        <module>user-Consumer</module>
     </modules>
 
     <groupId>org.example</groupId>
