@@ -3,11 +3,8 @@ server:
 
 dubbo:
   application:
-    name: user-producer  #应用名称
+    name: user-consumer  #应用名称
   registry:
     address: zookeeper://120.78.93.227:2181
-  protocol:
-    name: dubbo
-    port: 22223
   scan:
-    base-packages: com.glsc.model.**.impl
+    base-packages: com.glsc.model.*.*

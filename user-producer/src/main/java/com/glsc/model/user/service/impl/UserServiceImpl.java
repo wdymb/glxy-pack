@@ -3,6 +3,7 @@ package com.glsc.model.user.service.impl;
 import com.glsc.model.user.bean.pojo.User;
 import com.glsc.model.user.mapper.UserMapper;
 import com.glsc.model.user.service.IUserService;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -13,7 +14,7 @@ import java.util.List;
  * @author: scott
  * @date: 2020年06月27日 18:04
  */
-@Service
+@DubboService
 public class UserServiceImpl implements IUserService {
 
     @Autowired

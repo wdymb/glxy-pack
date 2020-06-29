@@ -1,8 +1,9 @@
-package glsc.model.user.controller;
+package com.glsc.model.user.controller;
 
-import glsc.model.user.bean.pojo.User;
-import glsc.model.user.service.IUserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.glsc.model.user.bean.pojo.User;
+import com.glsc.model.user.service.IUserService;
+import org.apache.dubbo.config.annotation.DubboReference;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
 @RestController
 public class UserController {
 
-    @Autowired
+    @DubboReference
     private IUserService userService;
 
     @GetMapping("/users")
